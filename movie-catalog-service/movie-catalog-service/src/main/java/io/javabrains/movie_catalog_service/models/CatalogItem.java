@@ -3,13 +3,13 @@ package io.javabrains.movie_catalog_service.models;
 public class CatalogItem {
 	private String name;
 	private String desc;
-	private String rating;
+	private int rating;
 	
 	
 	public CatalogItem() {
 		super();
 	}
-	public CatalogItem(String name, String desc, String rating) {
+	public CatalogItem(String name, String desc, int rating) {
 		super();
 		this.name = name;
 		this.desc = desc;
@@ -27,10 +27,10 @@ public class CatalogItem {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
-	public String getRating() {
+	public int getRating() {
 		return rating;
 	}
-	public void setRating(String rating) {
+	public void setRating(int rating) {
 		this.rating = rating;
 	}
 	

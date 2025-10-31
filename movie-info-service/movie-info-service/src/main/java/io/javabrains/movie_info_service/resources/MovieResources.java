@@ -13,8 +13,9 @@ import io.javabrains.movie_info_service.modules.Movie;
 @RequestMapping("/movie")
 public class MovieResources {
 	@RequestMapping("/{movieId}")
-	public List<Movie> getMovie(@PathVariable("movieId") String movieId){
-		return Collections.singletonList(new Movie("3","Dabang"));
+	public Movie getMovie(@PathVariable("movieId") String movieId){
+	    return new Movie(movieId, "Dabang");
 	}
+
 
 }
